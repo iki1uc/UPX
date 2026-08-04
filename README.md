@@ -1,64 +1,94 @@
-# WHIRL – 9×9 RESPO‑Launcher · NC²□ Drift‑Matrix
+# UPX · Universal Pulse Cross (System‑Score)
 
-WHIRL ist der zentrale rotierende 81‑Felder‑Launcher für alle RESPO‑Module.
-Er verbindet die moderne RESPO‑Matrix (OCTA/REAL/Quadrant) mit dem älteren
-AnPI · SQRT‑API‑NC²□ System und führt beide Systeme in einer einheitlichen
-NC‑Drift‑Struktur zusammen.
+UPX ist der System‑Score des 9×9‑Modulsystems.  
+Er steht im Zentrum aller Achsen (RUN8) und bildet den Kreuzungspunkt  
+zwischen physischer Energie, Meta‑Yield und Hyper‑Zenith.
 
-──────────────────────────────────────────────
-## 🔹 WHIRL‑Zweck
-- Rotiert automatisch durch alle 81 Felder
-- Startet jedes RESPO‑Modul direkt aus der Matrix
-- Verbindet alte NC²□‑Drift‑Engines mit neuen RESPO‑Modulen
-- Keine manuelle Arbeit notwendig
-- Voll kompatibel mit OCTA, REAL, Quadrant, whirl.json
+UPX ist der neutrale System‑Ausgleich zwischen UFI (Überfluss)  
+und EFE (Effizienz/Schwund).  
+Er ist der zentrale Score‑Operator des gesamten Systems.
 
-──────────────────────────────────────────────
-## 🔹 Eingebundene RESPO‑Module
-Alle RESPO‑Repos werden automatisch geladen:
+---
 
-- RESPOx  
-- RESPO_ARG_SCAN  
-- RESPO_UI_STATUS  
-- RESPO-MULTI-NORM  
-- RESPO-Code-Pipeline  
-- RESPO  
-- RESPO-Beam-Point  
-- RESPO.Ort-LAGE  
-- RESPO-Station  
-- RESPO-Name  
-- RESPO_MODUL_LOOP  
-- respo-scan-hub.app  
-- RESPO_CORE_ROUTER  
-- Respo-Rotation  
-- respo-ghost-bridge.cloud  
-- RESPO_MOTION_PRIME  
-- RESPO_POSITION_USER  
+## 1. Identität (ID.html)
 
-──────────────────────────────────────────────
-## 🔹 Verbindung zum alten System (AnPI · SQRT‑API‑NC²□)
-WHIRL integriert folgende ältere Module:
+UPX besitzt eine System‑Achsen‑Identität:
 
-- SQRT‑Room (Wurzel‑Engine)
-- API.room / API.raw / API.system.js
-- NC²□ Drift‑Visualizer
-- RUN8‑WURZEL‑RESPO
-- T.room / h.room
-- Meta‑Drift‑Monitor6D
-- NC²□ Sync‑Visualizer
+ID = AXIS(UX)✦
 
-Diese Module werden über WHIRL automatisch in die 9×9‑Matrix eingebunden.
+AXIS(UX) ∈ {N, S, E, W, UP, DOWN, IN, OUT}  
+✦ = INNER(CROSS)
 
-──────────────────────────────────────────────
-## 🔹 Dateien in diesem Repository
-- `whirl.json` – Rotationsmatrix (81 Felder)
-- `index.html` – grafischer WHIRL‑Launcher
-- `REAL.json` – 9×9 Routing‑Matrix
-- `octa.json` – OCTA‑Definition
-- `quadrant.json` – Quadranten‑Routing
-- `README.md` – diese Dokumentation
+Der UPX‑Kern repräsentiert die Kreuzung aller Achsen  
+und ist der zentrale Score‑Punkt des Systems.
 
-──────────────────────────────────────────────
-## 🔹 Startpunkt
-WHIRL kann direkt über `index.html` gestartet werden.
-Alle RESPO‑Module sind sofort anwählbar.
+---
+
+## 2. Score‑Struktur (score-bedeutung-3.csv)
+
+UPX ist der dritte Score‑Typ:
+
+1. UFI (Überfluss)
+2. EFE (Effizienz/Schwund)
+3. UPX (Cross)
+
+Mathematisch:
+
+UPX = UFI · EFE
+
+Damit ist UPX der System‑Multiplikator beider Kräfte.
+
+---
+
+## 3. Geo‑Form‑Kompatibilität (geo-form-kompatibel-mit-3.csv)
+
+UPX ist kompatibel mit den drei System‑Formen:
+
+- Kreis (System‑Neutralität)
+- Achse (Struktur)
+- Kreuzung (System‑Kern)
+
+Diese Formen definieren die geometrische Darstellung des UPX‑Symbols.
+
+---
+
+## 4. Schnittstellen‑Bandbreite (schnittstelle-bandbreite-6.csv)
+
+UPX besitzt 6 System‑Schnittstellen:
+
+- Physisch → Meta
+- Meta → Hyper
+- Hyper → Ultra
+- Score → Verhalten
+- Verhalten → Zyklus
+- Zyklus → Modul
+
+Damit ist UPX vollständig kompatibel mit allen 9×9‑Modulen.
+
+---
+
+## 5. Systemintegration
+
+UPX ist kompatibel mit:
+
+- RUN8 (N, S, E, W, UP, DOWN, IN, OUT)
+- UFO = 9^9 (Zentrum)
+- 6‑BLOCK (HOME, TRANS, WARB, KANAL, UFO, CONTINIUM)
+- VLOU (81 × 3)
+- KOOP · POOK · 0000
+- UFI / EFE / UPY / UPZ (Score‑System)
+
+UPX ist der System‑Score des 9×9‑Systems.
+
+---
+
+## 6. Dateien im Repository
+
+- **ID.html** – System‑Score‑Symbol  
+- **index.html** – Score‑Cross‑Demo  
+- **README.md** – Dokumentation  
+- **geo-form-kompatibel-mit-3.csv** – Geo‑Matrix  
+- **schnittstelle-bandbreite-6.csv** – Schnittstellenmatrix  
+- **score-bedeutung-3.csv** – Score‑Matrix
+
+UPX ist Modul 7/9 des 9×9‑Systems.
