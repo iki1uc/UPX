@@ -2,78 +2,175 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>WHIRL · NC²□ · GEO‑ID · 81‑Vektor</title>
+<title>UPX · SYSTEM CROSS EVO</title>
 
 <style>
-body { background:#000; color:#0f0; font-family:monospace; padding:40px; }
-h1 { color:#6cf; margin-bottom:30px; }
-
-#geo {
-    width: 360px;
-    height: 360px;
-    margin: 40px auto;
-    border: 3px solid #6cf;
-    border-radius: 50%;
-    position: relative;
-    animation: spin 9s linear infinite;
+body {
+    background:#000;
+    color:#0f0;
+    font-family:Consolas;
+    padding:40px;
+    text-align:center;
 }
 
-.dot {
-    width: 12px;
-    height: 12px;
-    background:#0f0;
+/* Szene */
+#scene {
+    width:340px;
+    height:340px;
+    margin:auto;
+    position:relative;
+    border:2px solid #0ff;
     border-radius:50%;
+    box-shadow:0 0 25px #0ff inset;
+}
+
+/* Achsenlinien – System‑Cross */
+.axis {
     position:absolute;
+    background:#0ff;
+    opacity:0.30;
+    transition:opacity 0.4s;
 }
 
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
+/* Vertikal */
+#v {
+    width:2px;
+    height:340px;
+    left:50%;
+    top:0;
+    transform:translateX(-50%);
 }
 
-pre {
+/* Horizontal */
+#h {
+    width:340px;
+    height:2px;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+}
+
+/* Diagonal */
+#d1 {
+    width:2px;
+    height:340px;
+    left:50%;
+    top:0;
+    transform:translateX(-50%) rotate(45deg);
+}
+
+#d2 {
+    width:2px;
+    height:340px;
+    left:50%;
+    top:0;
+    transform:translateX(-50%) rotate(-45deg);
+}
+
+/* UPX‑Kern */
+#core {
+    position:absolute;
+    width:70px;
+    height:70px;
     background:#111;
-    padding:20px;
-    border-left:3px solid #6cf;
-    white-space:pre-wrap;
+    border:2px solid #0ff;
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#0ff;
+    font-size:24px;
+    animation:pulse 3.8s infinite;
+}
+
+/* System‑Pulse – ruhig, neutral */
+@keyframes pulse {
+    0%   { transform:translate(-50%, -50%) scale(1);   color:#0ff; }
+    50%  { transform:translate(-50%, -50%) scale(1.20); color:#7ff; }
+    100% { transform:translate(-50%, -50%) scale(1);   color:#0ff; }
+}
+
+/* System‑Rotation – stabil */
+#energy {
+    position:absolute;
+    width:290px;
+    height:290px;
+    border:2px dashed #0ff;
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    animation:rotate540 9s linear infinite;
+}
+
+@keyframes rotate540 {
+    from { transform:translate(-50%, -50%) rotate(0deg); }
+    to   { transform:translate(-50%, -50%) rotate(540deg); }
+}
+
+/* System‑Aura */
+#aura {
+    position:absolute;
+    width:340px;
+    height:340px;
+    border-radius:50%;
+    top:0;
+    left:0;
+    background:radial-gradient(circle,
+        rgba(0,255,255,0.18) 0%,
+        rgba(0,0,0,0.8) 70%);
+    animation:auraPulse 5.5s infinite;
+}
+
+@keyframes auraPulse {
+    0%   { opacity:0.18; }
+    50%  { opacity:0.32; }
+    100% { opacity:0.18; }
 }
 </style>
-
 </head>
 
 <body>
 
-<h1>WHIRL · GEO‑ID · 81‑Vektor‑Rotation</h1>
+<h1>UPX · SYSTEM CROSS EVO</h1>
 
-<div id="geo"></div>
+<div id="scene">
+    <div id="aura"></div>
+    <div id="energy"></div>
+    <div id="v" class="axis"></div>
+    <div id="h" class="axis"></div>
+    <div id="d1" class="axis"></div>
+    <div id="d2" class="axis"></div>
+    <div id="core">UPX</div>
+</div>
 
 <pre>
-GEO‑ID: WHIRL‑Vektor
-Form: 9×9 Rotation
-Felder: 81
-Typ: NC²□ Drift‑Geometrie
-Funktion: Erkennungs‑Bewegung / ID‑Stempel
+RUN8 = N S E W UP DOWN IN OUT
+UFO = 9^9
+UPX = UFI · EFE
+VLOU = 81 × 3
+System‑Neutralität · Achsen‑Kreuzung
 </pre>
 
 <script>
-// WHIRL als Vektor (81 Punkte)
-const geo = document.getElementById("geo");
-const count = 81;
-const radius = 160;
+// Achsen-Flimmern – System‑leicht
+setInterval(() => {
+    const axes = document.querySelectorAll('.axis');
+    axes.forEach(a => a.style.opacity = Math.random() * 0.30 + 0.10);
+}, 480);
 
-for(let i=0; i<count; i++){
-    const dot = document.createElement("div");
-    dot.className = "dot";
-
-    const angle = (i / count) * Math.PI * 2;
-    const x = Math.cos(angle) * radius + 180 - 6;
-    const y = Math.sin(angle) * radius + 180 - 6;
-
-    dot.style.left = x + "px";
-    dot.style.top = y + "px";
-
-    geo.appendChild(dot);
-}
+// System‑Score‑Pulse (UPX‑Cycle)
+let pulse = 0;
+setInterval(() => {
+    pulse = (pulse + 1) % 81;
+    document.getElementById("core").style.color =
+        pulse % 3 === 0 ? "#0ff" :
+        pulse % 3 === 1 ? "#7ff" :
+                          "#fff";
+}, 230);
 </script>
 
 </body>
